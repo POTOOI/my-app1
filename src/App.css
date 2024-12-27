@@ -7,10 +7,78 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2.5rem;
   }
+
+  .banner p {
+    font-size: 1.2rem;
+  }
+
+  .course-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-row img {
+    width: 90%;  /* ทำให้ภาพไม่ใหญ่เกินไปบนมือถือ */
+    height: auto;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .activities {
+    flex-direction: column;
+  }
+
+  .activities img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}
+/* Example CSS */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .App-header {
@@ -35,4 +103,5 @@
   to {
     transform: rotate(360deg);
   }
+  
 }
