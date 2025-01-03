@@ -39,4 +39,4 @@ function Courses() {
   );
 }
 
-export default Courses;
+export default Courses; // Make sure it's exported as default
